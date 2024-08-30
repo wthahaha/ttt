@@ -11,7 +11,9 @@
     "dependencies": {
         "@opentiny/unplugin-tiny-vue": "^0.0.2",
         "@opentiny/vue": "~3",
-        "vue": "^3.4.37"
+        "echarts": "^5.5.1",
+        "vue": "^3.4.37",
+        "vue-echarts": "^7.0.3"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.1.2",
