@@ -440,15 +440,13 @@ export default function getData() {
         }
       },
       itemStyle: {
-        normal: {
-          areaColor: "#0059B3", // 区域颜色
-          borderColor: "#00c3ff", // 边界线颜色
-          borderWidth: 0.3,
-          // shadowColor: "green", // 边界投影颜色
-          // shadowOffsetX: 0,  // 边界投影设置
-          // shadowOffsetY: 5,
-          // shadowBlur: 1,
-        },
+        areaColor: "#0059B3", // 区域颜色
+        borderColor: "#00c3ff", // 边界线颜色
+        borderWidth: 0.3,
+        // shadowColor: "green", // 边界投影颜色
+        // shadowOffsetX: 0,  // 边界投影设置
+        // shadowOffsetY: 5,
+        // shadowBlur: 1,
       },
       top: "30%",
     },

@@ -11,14 +11,13 @@
         <div class="s1">s1</div>
         <div class="s2">s2</div>
         <div class="s3">s3</div>
-        <div class="s4">s4</div>
+        <!-- <div class="s4">s4</div>
         <div class="s5">s5</div>
-        <div class="s6">s6</div>
+        <div class="s6">s6</div> -->
       </div>
     </div>
     <div class="map">
-      <!-- <China /> -->
-      <World />
+      <China />
     </div>
   </div>
 </template>
@@ -26,7 +25,6 @@
 <script setup lang="jsx">
 import { ref } from "vue";
 import China from "./china.vue";
-import World from "./world.vue";
 </script>
 
 <style scoped>
