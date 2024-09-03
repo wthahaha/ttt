@@ -407,15 +407,14 @@ export default function getData() {
       fontFamily: 'Inter, "Helvetica Neue", Arial, sans-serif',
       fontWeight: 300
     },
-    // backgroundColor: "#404a59",
-    title: {
-      text: "这是一个标题",
-      top: "5%",
-      left: "center",
-      textStyle: {
-        color: "#fff"
-      }
-    },
+    // title: {
+    //   text: "展示地图标题",
+    //   top: "5%",
+    //   left: "center",
+    //   textStyle: {
+    //     color: "#fff"
+    //   }
+    // },
     tooltip: {
       trigger: "item"
     },
@@ -430,7 +429,7 @@ export default function getData() {
     // },
     geo: {
       map: "china",
-      zoom: 1.8,
+      zoom: 1.6,
       emphasis: {
         label: {
           show: false
@@ -480,12 +479,9 @@ export default function getData() {
             const offset = params.data.offsets || [0, 0]; // 默认值为 [0, 0]
             return offset;
           },
-
-          textStyle: {
-            color: '#fff',        // 设置文本颜色
-            fontSize: 18,         // 设置字体大小
-            fontFamily: 'Arial',  // 设置字体
-          },
+          color: '#fff',        // 设置文本颜色
+          fontSize: 18,         // 设置字体大小
+          fontFamily: 'Arial',  // 设置字体
           show: true
         },
         itemStyle: {

@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@kjgl77/datav-vue3": "^1.7.3",
         "@opentiny/unplugin-tiny-vue": "^0.0.2",
         "@opentiny/vue": "~3",
         "echarts": "^5.5.1",

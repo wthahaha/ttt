@@ -17,7 +17,21 @@
       </div>
     </div>
     <div class="map">
-      <China />
+      <div class="header">
+        <div class="left">
+          <dv-decoration6 class="deco-left" :dur="5" />
+        </div>
+        <div class="middle">
+          标题
+        </div>
+        <div class="right">
+          <dv-decoration6 class="deco-right" :reverse="true" />
+        </div>
+      </div>
+      <div class="map-chart">
+        <China />
+      </div>
+
     </div>
   </div>
 </template>
@@ -63,13 +77,74 @@ import China from "./china.vue";
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-rows: repeat(20, calc(5% - 2px));
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
+}
+
+.map>.header {
+  grid-row: 1;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.map>.header>.left {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 两列，每列占50%宽度 */
+}
+
+.map>.header>.left>.deco-left {
+  grid-column: 2;
+  width: 100%;
+}
+
+.map>.header>.middle {
+  grid-row: 1;
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 100%;
+  font-family: 'Microsoft YaHei', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.map>.header>.right {
+  grid-row: 1;
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.map>.header>.right>.deco-right {
+  grid-column: 1;
+  width: 100%;
+}
+
+.map>.map-chart {
+  grid-row: 2/21;
+  grid-column: 1 / 4;
+  width: 100%;
+  height: 100%;
 }
 
 .one {
