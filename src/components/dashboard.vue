@@ -22,7 +22,7 @@
           <dv-decoration6 class="deco-left" :dur="5" />
         </div>
         <div class="middle">
-          标题
+          百万域名探测
         </div>
         <div class="right">
           <dv-decoration6 class="deco-right" :reverse="true" />
@@ -121,7 +121,7 @@ import China from "./china.vue";
   font-family: 'Microsoft YaHei', sans-serif;
   color: white;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 40px;
   text-align: center;
   line-height: 2.5;
 }
